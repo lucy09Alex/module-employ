@@ -1,0 +1,27 @@
+{
+    "name": "mangoit/module-employ",
+    "description": "Mangoit Employ Module for Magento 2",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~7.4.0||~8.0.0||~8.1.0",
+        "magento/module-backend": "102.0.*",
+        "magento/module-customer": "102.0.*",
+        "magento/module-catalog": "104.0.*",
+        "magento/module-cms": "104.0.*",
+        "magento/module-quote": "102.0.*",
+        "magento/module-sales": "104.0.*",
+        "magento/module-theme": "104.0.*",
+        "magento/module-widget": "102.0.*"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Mangoit\\Employ\\": ""
+        }
+    }
+}

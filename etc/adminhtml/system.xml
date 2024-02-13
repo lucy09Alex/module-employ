@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="emp" translate="label" sortOrder="10">
+            <label>Employ</label>
+        </tab>
+        <section id="emp_config" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Employ Config</label>
+            <tab>emp</tab>
+            <resource>Mangoit_Employ::Employ_config</resource>
+
+            <group id="module_info" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Module Information</label>
+                <!-- Module Version Field -->
+                <field id="module_version" translate="label" type="label" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Version</label>
+                    <comment><![CDATA[Module version: <strong>{module_version}</strong>]]></comment>
+                    <comment>Showing the latest version</comment>
+                </field>
+                <!-- Add more fields here as needed -->
+
+            </group>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <!-- Enable/Disable Field -->
+                <field id="enable_disable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable/Disable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Set module enable or disable</comment>
+                </field>
+
+                <!-- Add your fields here -->
+                <field id="default_emp" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Default Employee</label>
+                    <depends>
+                        <field id="enable_disable">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

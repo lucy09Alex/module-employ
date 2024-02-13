@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Mangoit
+ * @package     Mangoit_Employ
+
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--Grid collection-->
+    <virtualType name="Mangoit\Employ\Model\ResourceModel\Employ\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mangoit_emp</argument>
+            <argument name="resourceModel" xsi:type="string">Mangoit\Employ\Model\ResourceModel\Employ</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="mangoit_employ_employ_listing_data_source" xsi:type="string">Mangoit\Employ\Model\ResourceModel\Employ\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <!-- <add id="Mangoit_Employ::menu" title="Employ" module="Mangoit_Employ" sortOrder="10" resource="Mangoit_Employ::Employ_menu"/>
+
+        <add id="Mangoit_Employ::Employ_submenu" title="Manage Employ" module="Mangoit_Employ" sortOrder="20" parent="Mangoit_Employ::menu" action="emp/index/index" resource="Mangoit_Employ::Employ_submenu"/> -->
+
+        <add id="Mangoit_Employ::Employ_menu" title="Employ" module="Mangoit_Employ" sortOrder="100" parent="Magento_Sales::sales" resource="Mangoit_Employ::Employ_menu" />
+
+        <add id="Mangoit_Employ::Employ_submenu" title="Manage Employ" module="Mangoit_Employ" sortOrder="20" parent="Mangoit_Employ::Employ_menu" action="emp/index/index/" resource="Mangoit_Employ::Employ_submenu"/>
+
+        <add id="Mangoit_Employ::Employ_Config" title="Employ Config" module="Mangoit_Employ" sortOrder="20" parent="Mangoit_Employ::Employ_menu" action="admin/system_config/edit/section/emp_config/" resource="Mangoit_Employ::Employ_config"/>
+    </menu>
+</config>

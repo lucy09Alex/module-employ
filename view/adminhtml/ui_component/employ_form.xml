@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+	<argument name="data" xsi:type="array">
+		<item name="js_config" xsi:type="array">
+			<item name="provider" xsi:type="string">
+				employ_form.employ_form_data_source
+			</item>
+			<item name="deps" xsi:type="string">
+				employ_form.employ_form_data_source
+			</item>
+		</item>
+		<item name="label" xsi:type="string" translate="true">
+			General Information
+		</item>
+		<item name="config" xsi:type="array">
+			<item name="dataScope" xsi:type="string">
+				data
+			</item>
+			<item name="namespace" xsi:type="string">
+				employ_form
+			</item>
+		</item>
+		<item name="spinner" xsi:type="string">
+			general_information
+		</item>
+		<item name="buttons" xsi:type="array">
+			<item name="back" xsi:type="string">
+				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Back
+			</item>
+			<item name="delete" xsi:type="string">
+				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Delete
+			</item>
+			<item name="reset" xsi:type="string">
+				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Reset
+			</item>
+			<item name="save" xsi:type="string">
+				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Save
+			</item>
+		</item>
+		<item name="template" xsi:type="string">
+			templates/form/collapsible
+		</item>
+	</argument>
+	<dataSource name="employ_form_data_source">
+		<argument name="dataProvider" xsi:type="configurableObject">
+			<argument name="class" xsi:type="string">
+				Mangoit\Employ\Model\DataProvider
+			</argument>
+			<argument name="name" xsi:type="string">
+				employ_form_data_source
+			</argument>
+			<argument name="primaryFieldName" xsi:type="string">
+				emp_id
+			</argument>
+			<argument name="requestFieldName" xsi:type="string">
+				emp_id
+			</argument>
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="submit_url" xsi:type="url" path="*/*/save" />
+				</item>
+			</argument>
+		</argument>
+		<argument name="data" xsi:type="array">
+			<item name="js_config" xsi:type="array">
+				<item name="component" xsi:type="string">
+					Magento_Ui/js/form/provider
+				</item>
+			</item>
+		</argument>
+	</dataSource>
+	<fieldset name="general_information">
+		<argument name="data" xsi:type="array">
+			<item name="config" xsi:type="array">
+				<item name="collapsible" xsi:type="boolean">
+					false
+				</item>
+				<item name="label" xsi:type="string" translate="true">
+					General Information
+				</item>
+				<item name="sortOrder" xsi:type="number">
+					10
+				</item>
+			</item>
+		</argument>
+
+		<!-- emp name field -->
+		<field name="emp_name">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="validation" xsi:type="array">
+						<item name="required-entry" xsi:type="boolean">
+							true
+						</item>
+						<item name="min_text_length" xsi:type="number">
+							3
+						</item>
+					</item>
+					<item name="dataType" xsi:type="string">
+						text
+					</item>
+					<item name="label" xsi:type="string" translate="true">
+						Employee Name
+					</item>
+					<item name="formElement" xsi:type="string">
+						input
+					</item>
+					<item name="source" xsi:type="string">
+						emp_name
+					</item>
+					<item name="dataScope" xsi:type="string">
+						emp_name
+					</item>
+					<item name="sortOrder" xsi:type="number">
+					20
+					</item>
+				</item>
+			</argument>
+		</field>
+
+
+		<!-- emp position field -->
+		<field name="emp_position" sortOrder="25" formElement="select">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="validation" xsi:type="array">
+						<item name="required-entry" xsi:type="boolean">
+							true
+						</item>
+					</item>
+				</item>
+			</argument>
+			<settings>
+				<dataType>
+					string
+				</dataType>
+				<label translate="true">
+					Employee Position
+				</label>
+				<dataScope>
+					emp_position
+				</dataScope>
+			</settings>
+			<formElements>
+				<select>
+					<settings>
+						<options class="Mangoit\Employ\Model\Config\Source\Position" />
+					</settings>
+				</select>
+			</formElements>
+		</field>
+
+		<!-- emp email field -->
+		<field name="emp_email">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="validation" xsi:type="array">
+						<item name="required-entry" xsi:type="boolean">
+							true
+						</item>
+						<item name="validate-email" xsi:type="boolean">
+							true
+						</item>
+					</item>
+					<item name="dataType" xsi:type="string">
+						text
+					</item>
+					<item name="label" xsi:type="string" translate="true">
+						Employee Email
+					</item>
+					<item name="formElement" xsi:type="string">
+						email
+					</item>
+					<item name="source" xsi:type="string">
+						emp_email
+					</item>
+					<item name="dataScope" xsi:type="string">
+						emp_email
+					</item>
+					<item name="sortOrder" xsi:type="number">
+					40
+					</item>
+				</item>
+			</argument>
+		</field>
+
+		<!-- emp mobile field -->
+		<field name="emp_phone" sortOrder="40">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="validation" xsi:type="array">
+						<item name="required-entry" xsi:type="boolean">
+							true
+						</item>
+						<item name="min_text_length" xsi:type="number">
+							10
+						</item>
+						<item name="validate-digits" xsi:type="boolean">
+							true
+						</item>
+					</item>
+					<item name="dataType" xsi:type="string">
+						text
+					</item>
+					<item name="label" xsi:type="string" translate="true">
+						Employee Number
+					</item>
+					<item name="formElement" xsi:type="string">
+						input
+					</item>
+					<item name="source" xsi:type="string">
+						emp_phone
+					</item>
+					<item name="dataScope" xsi:type="string">
+						emp_phone
+					</item>
+				</item>
+			</argument>
+		</field>
+
+		<!-- emp City field -->
+		<field name="emp_city">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="validation" xsi:type="array">
+						<item name="required-entry" xsi:type="boolean">
+							true
+						</item>
+						<item name="min_text_length" xsi:type="number">
+							3
+						</item>
+					</item>
+					<item name="dataType" xsi:type="string">
+						text
+					</item>
+					<item name="label" xsi:type="string" translate="true">
+						Employee City
+					</item>
+					<item name="formElement" xsi:type="string">
+						input
+					</item>
+					<item name="source" xsi:type="string">
+						emp_city
+					</item>
+					<item name="dataScope" xsi:type="string">
+						emp_city
+					</item>
+					<item name="sortOrder" xsi:type="number">
+					45
+					</item>
+				</item>
+			</argument>
+		</field>
+
+		<!-- emp postcode field -->
+		<field name="emp_postcode" sortOrder="60">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="validation" xsi:type="array">
+						<item name="required-entry" xsi:type="boolean">
+							true
+						</item>
+						<item name="min_text_length" xsi:type="number">
+							3
+						</item>
+					</item>
+					<item name="dataType" xsi:type="string">
+						text
+					</item>
+					<item name="label" xsi:type="string" translate="true">
+						Employee Postcode
+					</item>
+					<item name="formElement" xsi:type="string">
+						input
+					</item>
+					<item name="source" xsi:type="string">
+						emp_postcode
+					</item>
+					<item name="dataScope" xsi:type="string">
+						emp_postcode
+					</item>
+				</item>
+			</argument>
+		</field>
+
+		<!-- emp conmpany field -->
+		<field name="emp_company">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="validation" xsi:type="array">
+						<item name="required-entry" xsi:type="boolean">
+							true
+						</item>
+						<item name="min_text_length" xsi:type="number">
+							3
+						</item>
+					</item>
+					<item name="dataType" xsi:type="string">
+						text
+					</item>
+					<item name="label" xsi:type="string" translate="true">
+						Employee Company
+					</item>
+					<item name="formElement" xsi:type="string">
+						input
+					</item>
+					<item name="source" xsi:type="string">
+						emp_company
+					</item>
+					<item name="dataScope" xsi:type="string">
+						emp_company
+					</item>
+					<item name="sortOrder" xsi:type="number">
+					45
+					</item>
+				</item>
+			</argument>
+		</field>
+	</fieldset>
+</form>

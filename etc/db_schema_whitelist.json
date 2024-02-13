@@ -1,0 +1,17 @@
+{
+    "mangoit_emp": {
+        "column": {
+            "emp_id": true,
+            "emp_name": true,
+            "emp_position": true,
+            "emp_email": true,
+            "emp_phone": true,
+            "emp_city": true,
+            "emp_postcode": true,
+            "emp_company": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

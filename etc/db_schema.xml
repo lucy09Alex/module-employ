@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="mangoit_emp" resource="default" engine="innodb" comment="Employ Table">
+        <column xsi:type="smallint" name="emp_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Employee ID"/>
+        <column xsi:type="text" name="emp_name" nullable="false" comment="Employee Name"/>
+        <column xsi:type="text" name="emp_position" nullable="false" comment="Employee Name"/>
+        <column xsi:type="text" name="emp_email" nullable="false" comment="Employee Email"/>
+        <column xsi:type="text" name="emp_phone" nullable="true" comment="Employee Phone"/>
+        <column xsi:type="text" name="emp_city" nullable="true" comment="Employee City"/>
+        <column xsi:type="text" name="emp_postcode" nullable="true" comment="Employee Postcode"/>
+        <column xsi:type="text" name="emp_company" nullable="true" comment="Employee Company"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="emp_id"/>
+        </constraint>
+    </table>
+</schema>

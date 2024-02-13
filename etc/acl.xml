@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <!-- <resource id="Mangoit_Employ::Employ_menu" title="Employ" sortOrder="1000">
+                    <resource id="Mangoit_Employ::Employ_submenu" title="Manage Employs" sortOrder="10"/>
+                </resource> -->
+
+                <resource id="Magento_Sales::sales">
+                    <resource id="Magento_Sales::sales_operation">
+                        <resource id="Mangoit_Employ::Employ_menu" title="Employ" sortOrder="10">
+                            <resource id="Mangoit_Employ::Employ_submenu" title="Employ manage" sortOrder="10">
+                            <resource id="Mangoit_Employ::add" title="Add" sortOrder="10"/>
+                            <resource id="Mangoit_Employ::edit" title="Edit" sortOrder="10"/>
+                            <resource id="Mangoit_Employ::delete" title="Delete" sortOrder="10"/>
+                            <resource id="Mangoit_Employ::view" title="View" sortOrder="10"/>
+                        </resource>
+                            <resource id="Mangoit_Employ::Employ_config" title="Set Configuration" sortOrder="10"/>
+                        </resource>
+                    </resource>
+                </resource>
+
+            </resource>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,18 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <emp_config>
+            <!-- Module Information Group -->
+            <module_info>
+                <module_version>1.0.0</module_version>
+                <!-- Add more fields here as needed -->
+            </module_info>
+
+            <!-- General Configuration Group -->
+            <general>
+                <enable_disable>1</enable_disable>
+                <default_emp>Associative Developer</default_emp>
+                <!-- Add your fields here -->
+            </general>
+        </emp_config>
+    </default>
+</config>
