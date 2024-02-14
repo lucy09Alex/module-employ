@@ -11,8 +11,8 @@ The Employ module provides additional features related to employee management in
 
 ## Requirements
 
-- PHP >= 7.4.0
-- Magento >= 2.4.3, <= 2.4.6
+- PHP <= 8.1.0
+- Magento <= 2.4.6
 - Magento Backend Module
 - Magento Customer Module
 - Magento Catalog Module
