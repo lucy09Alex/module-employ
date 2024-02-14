@@ -1,9 +1,9 @@
 <?php
 /**
- * Copyright © Mangoit Technologies Pvt Ltd. All rights reserved.
+ * Copyright © Lucy09Alex Technologies Pvt Ltd. All rights reserved.
  * Delete Existing specific row data of Employ 
  */
-namespace Mangoit\Employ\Controller\Adminhtml\Index;
+namespace Lucy09Alex\Employ\Controller\Adminhtml\Index;
 
 use Magento\Backend\App\Action;
 
@@ -18,11 +18,11 @@ class Delete extends Action
     
     /**
      * @param Action\Context $context
-     * @param \Mangoit\Employ\Model\Employ $model
+     * @param \Lucy09Alex\Employ\Model\Employ $model
      */
     public function __construct(
         Action\Context $context,
-        \Mangoit\Employ\Model\Employ $model
+        \Lucy09Alex\Employ\Model\Employ $model
     ) {
         parent::__construct($context);
         $this->_modelEmp = $model;
@@ -33,7 +33,7 @@ class Delete extends Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Mangoit_Employ::delete');
+        return $this->_authorization->isAllowed('Lucy09Alex_Employ::delete');
     }
 
     /**

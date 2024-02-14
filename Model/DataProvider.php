@@ -5,8 +5,8 @@
  *
  * Created By: MageDelight Pvt. Ltd.
  */
-namespace Mangoit\Employ\Model;
-use Mangoit\Employ\Model\ResourceModel\Employ\CollectionFactory;
+namespace Lucy09Alex\Employ\Model;
+use Lucy09Alex\Employ\Model\ResourceModel\Employ\CollectionFactory;
 class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 {
     /**

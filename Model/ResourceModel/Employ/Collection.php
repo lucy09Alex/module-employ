@@ -1,9 +1,9 @@
 <?php
-namespace Mangoit\Employ\Model\ResourceModel\Employ;
+namespace Lucy09Alex\Employ\Model\ResourceModel\Employ;
 
 /**
  * Class Collection
- * @package Mangoit\Employ\Model\ResourceModel\Employ
+ * @package Lucy09Alex\Employ\Model\ResourceModel\Employ
  */
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
@@ -19,7 +19,7 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
      *
      * @var string
      */
-    protected $_eventPrefix = 'mangoit_employ_employ_collection';
+    protected $_eventPrefix = 'Lucy09Alex_employ_employ_collection';
 
     /**
      * Event object
@@ -35,6 +35,6 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
      */
     protected function _construct()
     {
-        $this->_init('Mangoit\Employ\Model\Employ', 'Mangoit\Employ\Model\ResourceModel\Employ');
+        $this->_init('Lucy09Alex\Employ\Model\Employ', 'Lucy09Alex\Employ\Model\ResourceModel\Employ');
     }
 }

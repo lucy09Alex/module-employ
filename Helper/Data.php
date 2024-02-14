@@ -2,7 +2,7 @@
 /**
  * Employ Data Block
  */
-namespace Mangoit\Employ\Helper;
+namespace Lucy09Alex\Employ\Helper;
 
 /**
  * Core class for creating a helper

@@ -1,25 +1,25 @@
 <?php
 /**
- * Mangoit
+ * Lucy09Alex
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Mangoit.com license that is
+ * This source file is subject to the Lucy09Alex.com license that is
  * available through the world-wide-web at this URL:
- * https://www.Mangoit.com/LICENSE.txt
+ * https://www.Lucy09Alex.com/LICENSE.txt
  *
  * DISCLAIMER
  *
  * Do not edit or add to this file if you wish to upgrade this extension to newer
  * version in the future.
  *
- * @category    Mangoit
- * @package     Mangoit_Employ
- * @copyright   Copyright (c) Mangoit (https://www.Mangoit.com/)
- * @license     https://www.Mangoit.com/LICENSE.txt
+ * @category    Lucy09Alex
+ * @package     Lucy09Alex_Employ
+ * @copyright   Copyright (c) Lucy09Alex (https://www.Lucy09Alex.com/)
+ * @license     https://www.Lucy09Alex.com/LICENSE.txt
  */
 
-namespace Mangoit\Employ\Controller\Adminhtml\Index;
+namespace Lucy09Alex\Employ\Controller\Adminhtml\Index;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -27,7 +27,7 @@ use Magento\Framework\View\Result\PageFactory;
 
 /**
  * Class Index
- * @package Mangoit\Employ\Controller\Index
+ * @package Lucy09Alex\Employ\Controller\Index
  */
 class Index extends Action
 {

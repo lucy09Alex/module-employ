@@ -1,12 +1,12 @@
 <?php
 /**
- * Copyright © Mangoit Technologies Pvt Ltd. All rights reserved.
+ * Copyright © Lucy09Alex Technologies Pvt Ltd. All rights reserved.
  *  Save grid's data for new row for Employ
  */
-namespace Mangoit\Employ\Controller\Adminhtml\Index;
+namespace Lucy09Alex\Employ\Controller\Adminhtml\Index;
 
 use Magento\Backend\App\Action;
-use Mangoit\Employ\Model\Employ;
+use Lucy09Alex\Employ\Model\Employ;
 use Magento\Backend\Model\Session;
 use Magento\Framework\Serialize\Serializer\Json;
 

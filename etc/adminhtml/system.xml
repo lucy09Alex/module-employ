@@ -8,7 +8,7 @@
             <class>separator-top</class>
             <label>Employ Config</label>
             <tab>emp</tab>
-            <resource>Mangoit_Employ::Employ_config</resource>
+            <resource>Lucy09Alex_Employ::Employ_config</resource>
 
             <group id="module_info" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Module Information</label>

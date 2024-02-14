@@ -1,10 +1,10 @@
 <?php
 /**
- * Copyright © Mangoit Technologies Pvt Ltd. All rights reserved.
+ * Copyright © Lucy09Alex Technologies Pvt Ltd. All rights reserved.
  * Save button code for custom form's Save operations
  */
 
-namespace Mangoit\Employ\Block\Adminhtml\Index\Edit\Button;
+namespace Lucy09Alex\Employ\Block\Adminhtml\Index\Edit\Button;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 use Magento\Ui\Component\Control\Container;

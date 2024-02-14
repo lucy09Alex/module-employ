@@ -264,7 +264,7 @@
 				<filter>
 					select
 				</filter>
-				<options class="Mangoit\Employ\Model\Config\Source\Position" />
+				<options class="Lucy09Alex\Employ\Model\Config\Source\Position" />
 			</settings>
 		</column>
 
@@ -320,7 +320,7 @@
 				<filter>
 					select
 				</filter>
-				<options class="Mangoit\Employ\Model\Config\Source\CitiesOptions" />
+				<options class="Lucy09Alex\Employ\Model\Config\Source\CitiesOptions" />
 			</settings>
 		</column>
 
@@ -356,7 +356,7 @@
 			</argument>
 		</column>
 
-		<actionsColumn name="actions" class="Mangoit\Employ\Ui\Component\Listing\Column\EmployActions">
+		<actionsColumn name="actions" class="Lucy09Alex\Employ\Ui\Component\Listing\Column\EmployActions">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
 					<item name="resizeEnabled" xsi:type="boolean">

@@ -1,12 +1,12 @@
 <?php
 /**
- * Copyright © Mangoit Technologies Pvt Ltd. All rights reserved.
+ * Copyright © Lucy09Alex Technologies Pvt Ltd. All rights reserved.
  * 
  */
 
-namespace Mangoit\Employ\Ui\Component\Listing\Column;
+namespace Lucy09Alex\Employ\Ui\Component\Listing\Column;
 
-use Mangoit\Employ\Helper\Data;
+use Lucy09Alex\Employ\Helper\Data;
 use Magento\Framework\Serialize\Serializer\Json;
 use Psr\Log\LoggerInterface;
 

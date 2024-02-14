@@ -2,9 +2,9 @@
 /**
  * to provied option for category by change array to option in form
  */
-namespace Mangoit\Employ\Model\Config\Source;
+namespace Lucy09Alex\Employ\Model\Config\Source;
 
-use Mangoit\Employ\Helper\Data;
+use Lucy09Alex\Employ\Helper\Data;
 use Magento\Framework\Option\ArrayInterface;
 
 class CitiesOptions implements ArrayInterface

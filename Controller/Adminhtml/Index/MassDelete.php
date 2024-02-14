@@ -1,15 +1,15 @@
 <?php
 /**
- * Copyright © Mangoit Technologies Pvt Ltd. All rights reserved.
+ * Copyright © Lucy09Alex Technologies Pvt Ltd. All rights reserved.
  * Delete grid's multiple row data of Employ 
  */
-namespace Mangoit\Employ\Controller\Adminhtml\Index;
+namespace Lucy09Alex\Employ\Controller\Adminhtml\Index;
 
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Backend\App\Action\Context;
 use Magento\Ui\Component\MassAction\Filter;
-use Mangoit\Employ\Model\ResourceModel\Employ\CollectionFactory;
-use Mangoit\Employ\Model\Employ;
+use Lucy09Alex\Employ\Model\ResourceModel\Employ\CollectionFactory;
+use Lucy09Alex\Employ\Model\Employ;
 
 class MassDelete extends \Magento\Backend\App\Action
 {

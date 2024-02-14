@@ -4,7 +4,7 @@
  * Reset button code for custom form's Reset operations
  */
 
-namespace Mangoit\Employ\Block\Adminhtml\Index\Edit\Button;
+namespace Lucy09Alex\Employ\Block\Adminhtml\Index\Edit\Button;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 

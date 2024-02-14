@@ -5,6 +5,6 @@
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Mangoit_Employ',
+    'Lucy09Alex_Employ',
     __DIR__
 );

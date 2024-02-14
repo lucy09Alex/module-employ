@@ -25,16 +25,16 @@
 		</item>
 		<item name="buttons" xsi:type="array">
 			<item name="back" xsi:type="string">
-				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Back
+				Lucy09Alex\Employ\Block\Adminhtml\Index\Edit\Button\Back
 			</item>
 			<item name="delete" xsi:type="string">
-				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Delete
+				Lucy09Alex\Employ\Block\Adminhtml\Index\Edit\Button\Delete
 			</item>
 			<item name="reset" xsi:type="string">
-				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Reset
+				Lucy09Alex\Employ\Block\Adminhtml\Index\Edit\Button\Reset
 			</item>
 			<item name="save" xsi:type="string">
-				Mangoit\Employ\Block\Adminhtml\Index\Edit\Button\Save
+				Lucy09Alex\Employ\Block\Adminhtml\Index\Edit\Button\Save
 			</item>
 		</item>
 		<item name="template" xsi:type="string">
@@ -44,7 +44,7 @@
 	<dataSource name="employ_form_data_source">
 		<argument name="dataProvider" xsi:type="configurableObject">
 			<argument name="class" xsi:type="string">
-				Mangoit\Employ\Model\DataProvider
+				Lucy09Alex\Employ\Model\DataProvider
 			</argument>
 			<argument name="name" xsi:type="string">
 				employ_form_data_source
@@ -144,7 +144,7 @@
 			<formElements>
 				<select>
 					<settings>
-						<options class="Mangoit\Employ\Model\Config\Source\Position" />
+						<options class="Lucy09Alex\Employ\Model\Config\Source\Position" />
 					</settings>
 				</select>
 			</formElements>

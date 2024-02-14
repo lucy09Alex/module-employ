@@ -1,10 +1,10 @@
 <?php
 /**
- * Copyright © Mangoit Technologies Pvt Ltd. All rights reserved.
+ * Copyright © Lucy09Alex Technologies Pvt Ltd. All rights reserved.
  * delete button code for custom form's delete operations
  */
 
-namespace Mangoit\Employ\Block\Adminhtml\Index\Edit\Button;
+namespace Lucy09Alex\Employ\Block\Adminhtml\Index\Edit\Button;
 
 use Magento\Backend\Block\Widget\Context;
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;

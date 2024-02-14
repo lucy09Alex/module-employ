@@ -1,10 +1,10 @@
 <?php
 /**
- * Copyright © Mangoit Technologies Pvt Ltd. All rights reserved.
+ * Copyright © Lucy09Alex Technologies Pvt Ltd. All rights reserved.
  * Add new data for Employ by rendering custom form
  */
 
-namespace Mangoit\Employ\Controller\Adminhtml\Index;
+namespace Lucy09Alex\Employ\Controller\Adminhtml\Index;
 
 use Magento\Framework\Controller\ResultFactory;
 

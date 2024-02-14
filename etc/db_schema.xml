@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
-    <table name="mangoit_emp" resource="default" engine="innodb" comment="Employ Table">
+    <table name="lucy09alex_emp" resource="default" engine="innodb" comment="Employ Table">
         <column xsi:type="smallint" name="emp_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Employee ID"/>
         <column xsi:type="text" name="emp_name" nullable="false" comment="Employee Name"/>
         <column xsi:type="text" name="emp_position" nullable="false" comment="Employee Name"/>

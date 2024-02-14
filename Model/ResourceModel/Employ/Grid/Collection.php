@@ -1,12 +1,12 @@
 <?php
-namespace Mangoit\Employ\Model\ResourceModel\Employ\Grid;
+namespace Lucy09Alex\Employ\Model\ResourceModel\Employ\Grid;
 
 use Magento\Framework\View\Element\UiComponent\DataProvider\Document as EmpModel;
-use Mangoit\Employ\Model\ResourceModel\Employ\Collection as EmployCollection;
+use Lucy09Alex\Employ\Model\ResourceModel\Employ\Collection as EmployCollection;
 
 /**
  * Class Collection
- * @package Mangoit\Employ\Model\ResourceModel\Employ\Grid
+ * @package Lucy09Alex\Employ\Model\ResourceModel\Employ\Grid
  */
 class Collection extends EmployCollection implements \Magento\Framework\Api\Search\SearchResultInterface
 {

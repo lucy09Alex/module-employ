@@ -1,9 +1,9 @@
 <?php
-namespace Mangoit\Employ\Model\ResourceModel;
+namespace Lucy09Alex\Employ\Model\ResourceModel;
 
 /**
  * Class Employ
- * @package Mangoit\Employ\Model\ResourceModel
+ * @package Lucy09Alex\Employ\Model\ResourceModel
  */
 class Employ extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
@@ -23,6 +23,6 @@ class Employ extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('mangoit_emp', 'emp_id');
+        $this->_init('lucy09alex_emp', 'emp_id');
     }
 }

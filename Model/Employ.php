@@ -1,38 +1,38 @@
 <?php
-namespace Mangoit\Employ\Model;
+namespace Lucy09Alex\Employ\Model;
 
 /**
  * Employ Model represents an employee entity.
  *
- * @package Mangoit\Employ\Model
+ * @package Lucy09Alex\Employ\Model
  */
 class Employ extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface
 {
     /**
      * Cache tag for identifying this model's cache entries.
      */
-    const CACHE_TAG = 'mangoit_employ_post';
+    const CACHE_TAG = 'lucy09Alex_employ_post';
 
     /**
      * Cache tag for identifying this model's cache entries.
      *
      * @var string
      */
-    protected $_cacheTag = 'mangoit_employ_post';
+    protected $_cacheTag = 'lucy09Alex_employ_post';
 
     /**
      * Prefix of model events names.
      *
      * @var string
      */
-    protected $_eventPrefix = 'mangoit_employ_post';
+    protected $_eventPrefix = 'lucy09Alex_employ_post';
 
     /**
      * Initialize the model and set its resource model.
      */
     protected function _construct()
     {
-        $this->_init('Mangoit\Employ\Model\ResourceModel\Employ');
+        $this->_init('Lucy09Alex\Employ\Model\ResourceModel\Employ');
     }
 
     /**

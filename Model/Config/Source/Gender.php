@@ -2,7 +2,7 @@
 /**
  * to provied option for category by change array to option in form
  */
-namespace Mangoit\Employ\Model\Config\Source;
+namespace Lucy09Alex\Employ\Model\Config\Source;
 
 class Gender implements \Magento\Framework\Option\ArrayInterface
 {
