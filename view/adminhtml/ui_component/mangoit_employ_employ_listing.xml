@@ -79,7 +79,7 @@
 		</component>
 
 		<exportButton name="export_button"/>
-		<!-- <filterSearch name="fulltext">
+		<filterSearch name="fulltext">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
 					<item name="provider" xsi:type="string">
@@ -128,7 +128,7 @@
 					</item>
 				</argument>
 			</filterSelect>
-		</filters> -->
+		</filters>
 
 		<massaction name="listing_massaction">
 			<argument name="data" xsi:type="array">
