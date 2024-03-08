@@ -12,5 +12,14 @@
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="emp_id"/>
         </constraint>
+        <index referenceId="LUCY09ALEX_EMP" indexType="fulltext">
+            <column name="emp_name"/>
+            <column name="emp_position"/>
+            <column name="emp_email"/>
+            <column name="emp_phone"/>
+            <column name="emp_city"/>
+            <column name="emp_postcode"/>
+            <column name="emp_company"/>
+        </index>
     </table>
 </schema>
